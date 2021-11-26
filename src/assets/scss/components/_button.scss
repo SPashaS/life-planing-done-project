@@ -1,0 +1,20 @@
+.btn {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 13px;
+    line-height: 100%;
+    font-weight: 700;
+    width: 113px;
+    height: 43px;
+    border: 0;
+    border-radius: 2px;
+
+    &--red {
+        background-color: #FFD7D7;
+        color: #D43F3F!important;
+    }
+
+    &--lightBlue {
+        background-color: #D2E1FF;
+        color: #3A79FF!important;
+    }
+}
