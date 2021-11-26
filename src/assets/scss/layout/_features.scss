@@ -1,10 +1,15 @@
 .features {
-    background: #fff;
-    padding: 171px 0;
-    background: url(./../images/features/clouds.svg), url(./../images/features/cloud.svg);
-    background-repeat: no-repeat;
-    background-position: 5% 5%, 96% 5% ;
+    .container {
+        background: #fff;
+        padding: 171px 0;
+        background: url(./../images/features/clouds.svg), url(./../images/features/cloud.svg);
+        background-repeat: no-repeat;
+        background-position: 5% 5%, 96% 5% ;
+    }
 
+    &__title-box {
+        margin-bottom: 92px;
+    }
     &__content {
         gap: 30px;
     }
