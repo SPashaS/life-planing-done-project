@@ -40,21 +40,20 @@ html {
 
 .title-box {
     color: #3D4F9F;
-    margin-bottom: 92px;
 }
 
-.title {
+.title-box__title {
     font-family: 'RobotoMedium', sans-serif;
     font-size: 10px;
     line-height: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
-.tagline {
+.title-box__tagline {
     font-family: 'QuicksandMedium', sans-serif;
     font-size: 24px;
-    line-height: 30px;
 }
 
 .btn {
@@ -78,12 +77,16 @@ html {
     color: #3A79FF !important;
 }
 
-.features {
+.features .container {
     background: #fff;
     padding: 171px 0;
     background: url(./../images/features/clouds.svg), url(./../images/features/cloud.svg);
     background-repeat: no-repeat;
     background-position: 5% 5%, 96% 5%;
+}
+
+.features__title-box {
+    margin-bottom: 92px;
 }
 
 .features__content {
@@ -211,27 +214,60 @@ html {
     align-items: center;
 }
 
+.statistics__row {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.statistics__col {
+    height: 342px;
+    gap: 25px;
+    padding: 0 90px 66px !important;
+}
+
+.statistics__col--violet {
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    color: #fff;
+}
+
+.statistics__col--light-blue {
+    background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+    color: #5E80FF;
+}
+
+.statistics__icon-1 {
+    width: 65px;
+    height: 66px;
+}
+
+.statistics__icon-2 {
+    width: 71px;
+    height: 62px;
+}
+
+.statistics__numb {
+    font-family: "QuicksandRegular", sans-serif;
+    font-size: 48px;
+    letter-spacing: 3%;
+}
+
+.statistics__text {
+    font-family: "QuicksandMedium", sans-serif;
+    font-size: 18px;
+    letter-spacing: 3%;
+    line-height: 23px;
+}
+
 .help {
     padding: 175px 0;
+}
+
+.help .container {
     border: 1px solid red;
 }
 
-.title {
-    color: #3D4F9F;
+.help__title-box {
     margin-bottom: 68px;
-}
-
-.title__text {
-    font-family: "RobotoMedium", sans-serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.title__slogan {
-    font-family: "QuicksandMedium", sans-serif;
-    font-size: 24px;
 }
 
 .help__card {
@@ -257,10 +293,6 @@ html {
     letter-spacing: .5px;
 }
 
-.btn.focus, .btn:focus {
-    box-shadow: none;
-}
-
 .help__card-btn {
     height: 12px;
     width: 20px;
@@ -282,6 +314,8 @@ html {
 .help__card-body {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: start;
@@ -289,13 +323,11 @@ html {
     padding: 16px 10px 50px 72px;
 }
 
-.help__card-text {
-    font-family: "RobotoRegular", sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    color: #8D96BD;
-    line-height: 1.9;
-    margin-right: 60px;
+@media (min-width: 576px) {
+    .help__card-body {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
 }
 
 .help__card-body-btn {
@@ -312,4 +344,17 @@ html {
 
 .help__card-body-btn:focus {
     outline: 1px solid transparent;
+}
+
+.help__card-text {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #8D96BD;
+    line-height: 1.9;
+    margin-right: 60px;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
 }

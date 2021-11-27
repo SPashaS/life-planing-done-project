@@ -1,0 +1,47 @@
+.statistics {
+    &__row {
+        display: flex;
+    }
+    
+    &__col {
+        display: flex;
+        gap: 25px;
+        height: 342px;
+        padding: 0 90px 66px!important;
+
+
+        &--violet {
+            background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+            color: #fff;
+            text-align: right;
+        }
+
+        &--light-blue {
+            background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+            color: #5E80FF;
+        }
+    }
+    &__icon {
+        &-1 {
+            width: 65px;
+            height: 66px;
+        }
+        &-2 {
+            width: 71px;
+            height: 62px;
+        }
+    }
+
+    &__numb {
+        font-family: "QuicksandRegular", sans-serif;
+        font-size: 48px;
+        letter-spacing: 3%;
+    }
+    &__text {
+        font-family: "QuicksandMedium", sans-serif;
+        font-size: 18px;
+        letter-spacing: 3%;
+        line-height: 23px;
+        max-width: 260px;
+    }
+}
