@@ -269,10 +269,6 @@ html {
     padding: 175px 0;
 }
 
-.help .container {
-    border: 1px solid red;
-}
-
 .help__title-box {
     margin-bottom: 68px;
 }
@@ -501,4 +497,14 @@ html {
     .partners {
         padding: 62px 0;
     }
+}
+
+.partners__svg {
+    width: 117px;
+    height: 29px;
+    fill: #D6DAE5;
+}
+
+.partners__svg:hover {
+    fill: #5982E7;
 }
