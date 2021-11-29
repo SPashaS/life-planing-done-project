@@ -434,11 +434,38 @@ html {
 }
 
 .sign__description {
-    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .sign__description {
+        margin-bottom: 0;
+    }
+}
+
+.sign__title {
+    font-family: 'QuicksandBold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3D4F9F;
+    margin-bottom: 18px;
+}
+
+.sign__text {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    color: #DFE2EF;
+}
+
+.sign__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .sign__form {
-    border: 1px solid red;
     gap: 15px;
 }
 
@@ -449,13 +476,29 @@ html {
     background-color: #EFEFF7;
     color: #7A85AD;
     border-radius: 5px;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 13px;
+    line-height: 100%;
+    padding: 0 23px;
 }
 
 .sign__btn {
     height: 59px;
-    max-width: 279px;
-    width: 100%;
+    width: 184px;
     background-color: #4D6CE1;
     border-radius: 5px;
     color: white;
+}
+
+.partners {
+    min-width: 145px;
+    padding: 30px 0;
+    border-top: 1px solid #F5F8FF;
+    border-bottom: 1px solid #F5F8FF;
+}
+
+@media (min-width: 1280px) {
+    .partners {
+        padding: 62px 0;
+    }
 }

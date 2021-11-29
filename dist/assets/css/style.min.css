@@ -205,8 +205,6 @@ html {
 
 .help {
   padding: 175px 0; }
-  .help .container {
-    border: 1px solid red; }
   .help__title-box {
     margin-bottom: 68px; }
   .help__card {
@@ -352,5 +350,20 @@ html {
     background-color: #4D6CE1;
     border-radius: 5px;
     color: white; }
+
+.partners {
+  min-width: 145px;
+  padding: 30px 0;
+  border-top: 1px solid #F5F8FF;
+  border-bottom: 1px solid #F5F8FF; }
+  @media (min-width: 1280px) {
+    .partners {
+      padding: 62px 0; } }
+  .partners__svg {
+    width: 117px;
+    height: 29px;
+    fill: #D6DAE5; }
+    .partners__svg:hover {
+      fill: #5982E7; }
 
 /*# sourceMappingURL=style.min.css.map */
