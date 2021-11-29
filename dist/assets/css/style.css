@@ -379,8 +379,6 @@ html {
 }
 
 .plan__content {
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-align: center;
@@ -416,8 +414,48 @@ html {
 .plan__btn-left {
     color: #565F82;
     background-color: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .plan__btn-right {
     color: #C7D3FF;
+    border: 1px solid #A0B4FF;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+}
+
+.sign {
+    padding: 120px 0;
+}
+
+.sign__description {
+    border: 1px solid red;
+}
+
+.sign__form {
+    border: 1px solid red;
+    gap: 15px;
+}
+
+.sign__email {
+    height: 59px;
+    width: 279px;
+    border: none;
+    background-color: #EFEFF7;
+    color: #7A85AD;
+    border-radius: 5px;
+}
+
+.sign__btn {
+    height: 59px;
+    max-width: 279px;
+    width: 100%;
+    background-color: #4D6CE1;
+    border-radius: 5px;
+    color: white;
 }

@@ -312,4 +312,45 @@ html {
     border-bottom-left-radius: 0;
     margin-left: -1px; }
 
+.sign {
+  padding: 120px 0; }
+  .sign__description {
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .sign__description {
+        margin-bottom: 0; } }
+  .sign__title {
+    font-family: 'QuicksandBold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3D4F9F;
+    margin-bottom: 18px; }
+  .sign__text {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    color: #DFE2EF; }
+  .sign__wrapper {
+    display: flex;
+    align-items: center; }
+  .sign__form {
+    gap: 15px; }
+  .sign__email {
+    height: 59px;
+    width: 279px;
+    border: none;
+    background-color: #EFEFF7;
+    color: #7A85AD;
+    border-radius: 5px;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 13px;
+    line-height: 100%;
+    padding: 0 23px; }
+  .sign__btn {
+    height: 59px;
+    width: 184px;
+    background-color: #4D6CE1;
+    border-radius: 5px;
+    color: white; }
+
 /*# sourceMappingURL=style.min.css.map */
