@@ -1,36 +1,36 @@
 @font-face {
     font-family: "RobotoMedium";
-    src: url("./../assets/fonts/Roboto-Medium.ttf") format("truetype");
+    src: url("./../fonts/Roboto-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "RobotoRegular";
-  src: url("./../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("./../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "QuicksandMedium";
-  src: url("./../assets/fonts/Quicksand-Medium.ttf") format("truetype");
+  src: url("./../fonts/Quicksand-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "QuicksandBold";
-  src: url("./../assets/fonts/Quicksand-Bold.ttf") format("truetype");
+  src: url("./../fonts/Quicksand-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "QuicksandRegular";
-  src: url("./../assets/fonts/Quicksand-Regular.ttf") format("truetype");
+  src: url("./../fonts/Quicksand-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "OpenSansBold";
-  src: url("./../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  src: url("./../fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "OpenSansSemiBold";
-  src: url("./../assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("./../fonts/OpenSans-SemiBold.ttf") format("truetype");
 }
 
 body,
@@ -61,10 +61,8 @@ html {
     font-size: 13px;
     line-height: 100%;
     font-weight: 700;
-    width: 113px;
-    height: 43px;
-    border: 0;
     border-radius: 2px;
+    height: 43px;
 }
 
 .btn--red {
@@ -202,6 +200,11 @@ html {
     }
 }
 
+.features__btn {
+    width: 113px;
+    border: 0;
+}
+
 .features .img-shape {
     background-color: #F1F5FF;
     width: 69px;
@@ -220,14 +223,17 @@ html {
 }
 
 .statistics__col {
-    height: 342px;
+    display: -ms-flexbox;
+    display: flex;
     gap: 25px;
+    height: 342px;
     padding: 0 90px 66px !important;
 }
 
 .statistics__col--violet {
     background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
     color: #fff;
+    text-align: right;
 }
 
 .statistics__col--light-blue {
@@ -256,6 +262,7 @@ html {
     font-size: 18px;
     letter-spacing: 3%;
     line-height: 23px;
+    max-width: 260px;
 }
 
 .help {
@@ -357,4 +364,60 @@ html {
 
 .btn.focus, .btn:focus {
     box-shadow: none;
+}
+
+.plan {
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    color: #fff;
+}
+
+.plan__inner {
+    background-image: url(./../images/plan/plan-clouds.svg), url(./../images/plan/plan-cloud.svg);
+    background-position: 5% 5%, 96% 5%;
+    background-repeat: no-repeat;
+    padding: 91px 0;
+}
+
+.plan__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.plan__title {
+    font-family: 'RobotoMedium', sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.plan__tagline {
+    font-family: 'QuicksandRegular', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 28px;
+}
+
+.plan__tagline span {
+    font-weight: 600;
+}
+
+.plan__text {
+    max-width: 712px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.plan__btn-left {
+    color: #565F82;
+    background-color: white;
+}
+
+.plan__btn-right {
+    color: #C7D3FF;
 }
